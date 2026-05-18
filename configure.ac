@@ -1,5 +1,5 @@
 # Process this file with autoconf to produce a configure script.
-AC_INIT([nauty],[2.9.1],[brendan.mckay@anu.edu.au])
+AC_INIT([nauty],[2.9.3],[brendan.mckay@anu.edu.au])
 AC_CONFIG_SRCDIR([nauty-h.in])
 
 # ======================================================================
@@ -570,6 +570,12 @@ AS_IF([test "$gunzip_prog" = "gunzip"],[have_gunzip=1],[have_gunzip=0])
 AC_SUBST(have_gunzip)
 
 LT_INIT
+AC_SUBST([enable_static])
+AS_IF([test "x$enable_static" = "xyes"],
+      [osuffix=".o" ; olist=""],
+      [osuffix=".lo" ; olist="L"])
+AC_SUBST([osuffix])
+AC_SUBST([olist])
 
 AC_CONFIG_FILES([makefile:makefile.in nauty.h:nauty-h.in
     naututil.h:naututil-h.in gtools.h:gtools-h.in

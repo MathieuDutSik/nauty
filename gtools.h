@@ -1,5 +1,5 @@
 /*****************************************************************************
-* This is the main header file for gtools.  nauty version 2.9.1
+* This is the main header file for gtools.  nauty version 2.9.3
 * Subject to the copyright notice in nauty.h.                                *
 * gtools.h.  Generated from gtools-h.in by configure.
 *****************************************************************************/
