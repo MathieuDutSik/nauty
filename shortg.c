@@ -320,7 +320,7 @@ main(int argc, char *argv[])
     char *arg,*tempdir,Zchar;
     sparsegraph sg,sh;
     DEFAULTOPTIONS_TRACES(traces_opts);
-    TracesStats traces_stats;
+    TracesStats traces_stats = {0};
     DYNALLSTAT(graph,h,h_sz);
     DYNALLSTAT(int,lab,lab_sz);
     DYNALLSTAT(int,ptn,ptn_sz);

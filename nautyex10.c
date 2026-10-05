@@ -17,7 +17,7 @@ main(int argc, char *argv[])
     DYNALLSTAT(int,orbits,orbits_sz);
     DYNALLSTAT(int,map,map_sz);
     static DEFAULTOPTIONS_TRACES(options);
-    TracesStats stats;
+    TracesStats stats = {0};
     permnode *generators;
  /* Declare and initialize sparse graph structures */
     SG_DECL(sg1); SG_DECL(sg2);

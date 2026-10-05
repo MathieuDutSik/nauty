@@ -117,7 +117,7 @@ main(int argc, char *argv[])
     nauty_counter nin,nout;
     int ii,secret,loops;
     DEFAULTOPTIONS_TRACES(traces_opts);
-    TracesStats traces_stats;
+    TracesStats traces_stats = {0};
     DYNALLSTAT(graph,h,h_sz);
     DYNALLSTAT(int,lab,lab_sz);
     DYNALLSTAT(int,ptn,ptn_sz);

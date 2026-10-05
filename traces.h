@@ -59,6 +59,9 @@ typedef struct TracesStats {
 	unsigned long numnodes;
 	unsigned long interrupted;
 	unsigned long peaknodes;
+	int *cnt;    /* If not NULL, an array of length 2n+1 filled with
+	                the multiplicities of the integer factors of the
+	                group size: |G| = prod_k k^cnt[k] */
 } TracesStats;
 
 #ifdef __cplusplus

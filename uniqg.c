@@ -211,7 +211,7 @@ processone(FILE *f, int prog, graph **gcan, sparsegraph *sgcan,
     DYNALLSTAT(setword,work,work_sz);
     DYNALLSTAT(set,active,active_sz);
     graph *g=NULL;
-    TracesStats traces_stats;
+    TracesStats traces_stats = {0};
     statsblk nauty_stats;
 
     if ((prog & USEDENSE))

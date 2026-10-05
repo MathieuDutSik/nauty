@@ -14,7 +14,7 @@ main(int argc, char *argv[])
     DYNALLSTAT(int,orbits,orbits_sz);
     DYNALLSTAT(int,map,map_sz);
     static DEFAULTOPTIONS_TRACES(options);
-    TracesStats stats;
+    TracesStats stats = {0};
  /* Declare and initialize sparse graph structures */
     SG_DECL(sg1); SG_DECL(sg2);
     SG_DECL(cg1); SG_DECL(cg2);
